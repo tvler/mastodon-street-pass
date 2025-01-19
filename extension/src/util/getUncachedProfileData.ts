@@ -6,7 +6,6 @@ export async function getUncachedProfileData(
   href: string,
 ): Promise<Required<ProfileData>> {
   try {
-    // TODO: Add path for Bluesky
     if (!getIsUrlHttpOrHttps(href)) {
       throw new Error();
     }
