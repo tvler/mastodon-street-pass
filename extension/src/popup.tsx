@@ -321,6 +321,7 @@ function Popup() {
                           "mastodon.social",
                           "mona",
                           "phanpy",
+                          "bluesky",
                         ] as const
                       ).map((item) => {
                         return (
@@ -347,6 +348,7 @@ function Popup() {
                                     "https://mastodon.online/@{account}",
                                   mona: "mona:{profileUrl.noProtocol}",
                                   phanpy: `https://phanpy.social/#/https:{profileUrl.noProtocol}`,
+                                  bluesky: `https://bsky.app/profile/{account}`,
                                 }[item];
 
                                 profileUrlSchemeInputRef.current.focus();
@@ -361,6 +363,7 @@ function Popup() {
                                   "mastodon.online": "mastodon.online",
                                   mona: "Mona",
                                   phanpy: "Phanpy",
+                                  bluesky: "Bluesky",
                                 }[item]
                               }
                             </button>
